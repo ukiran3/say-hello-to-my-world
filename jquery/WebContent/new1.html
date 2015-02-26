@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Union job application.</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<link rel = "stylesheet" href = "super1.css">
+<script>
+	$(document).ready(function() {
+		  $("#first").focusin(function(){
+	    $(this).css("background-color","#FFFFCC");
+			if($(this).val() == "first " )
+			{
+			$(this).attr("value", "");
+
+			}
+			  });
+			  $("#first").blur(function(){
+			    $(this).css("background-color","#FFFFFF");
+			if($(this).val() == "" )
+			{
+			$(this).attr("value", "first ");
+			}
+			  });
+
+	  $("#last").focusin(function(){
+		    $(this).css("background-color","#FFFFCC");
+		if($(this).val() == "last " )
+		{
+		$(this).attr("value", "");
+
+		}
+		  });
+		  $("#last").blur(function(){
+		    $(this).css("background-color","#FFFFFF");
+		if($(this).val() == "" )
+		{
+		$(this).attr("value", "last ");
+		}
+		  });
+		  $("#day").focusin(function(){
+			    $(this).css("background-color","#FFFFCC");
+					if($(this).val() == "Day" )
+					{
+					$(this).attr("value", "");
+
+					}
+					  });
+					  $("#day").blur(function(){
+					    $(this).css("background-color","#FFFFFF");
+					if($(this).val() == "" )
+					{
+					$(this).attr("value", "Day");
+					}
+					  });
+					  $("#year").focusin(function(){
+						    $(this).css("background-color","#FFFFCC");
+								if($(this).val() == "Year" )
+								{
+								$(this).attr("value", "");
+
+								}
+								  });
+								  $("#year").blur(function(){
+								    $(this).css("background-color","#FFFFFF");
+								if($(this).val() == "" )
+								{
+								$(this).attr("value", "Year");
+								}
+								  });
+
+		
+
+
+	});
+</script>
+</head>
+<body>
+
+	<div id="hea" style="background-color: #000;">
+		<h1 style="margin-bottom: 0; color: #FFF">SIGN-UP FORM</h1>
+	</div>
+	<div id="con" style="background-color:#eee; width:100%;height:1000px;">
+		<div id="men" style="width:50%; float: left;">
+			<p>Name</p>
+			<br> <input type="text" id="first" value = "first " class="txtx">
+			 <input	type="text" id="last" value = "last " class="txtx"> <br>
+			<p>Choose your username</p>
+			<br> <input type="text" id="username" class="txtx1"> <br>
+			<p>Create a password</p>
+			<br> <input type="password" id="pass" class="txtx1"> <br>
+			<p>Confirm your password</p>
+			<br> <input type="password" id="pass1" class="txtx1"> <br>
+			<p>Address Line 1</p>
+			<br> <input type="text" id="adr1" class="txtx1"> <br>
+			<p>Address Line 2</p>
+			<br> <input type="text" id="adr2" class="txtx1"> <br>
+			<p>City</p>
+			<br> <input type="text" id="city" class="txtx1"> <br>
+			<p>Location</p>
+			<br> <select name="me" id = "loc">
+				<option value="0" selected>Select your State</option>
+				<option value="1">CA</option>
+				<option value="2">NE</option>
+				<option value="3">OR</option>
+				<option value="4">WA</option>
+				<option value="5">MN</option>
+				<option value="6">MI</option>
+				<option value="7">NJ</option>
+				<option value="8">CO</option>
+				<option value="9">AZ</option>
+				<option value="10">NY</option>
+				<option value="11">Other</option>
+			</select> <br>
+		</div>
+		<div id="menu" style="width: 50%; float: right;">
+			<p>Birthday</p>
+			<br> <select name="month" id = "month">
+				<option value="0" selected>Month</option>
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+				
+			</select>
+			<input type = "text" id = "day" value = "Day">
+			<input type = "text" id = "year" value = "Year"><br>
+			<p>Gender</p>
+			<br> <select name="gender" id = "gender">
+				<option value="0" selected>I am...</option>
+				<option value="1">MALE</option>
+				<option value="2">FEMALE</option>
+			</select>
+			<p>Mobile Phone</p>
+			<br> <input type="text" id="mobile" class="txtx1"> <br>
+			<p>Your current email address</p>
+			<br> <input type="text" id="email" class="txtx1"> <br>
+			<p>Prove you're not a robot</p>
+			<input type= "checkbox" size = "10">Skip this verification(phone verification may be required)
+			<br><img src = "C:/Users/uday/image1.jpg">
+			
+		</div>
+		<input type = "submit" value = "Submit">
+	</div>
+</body>
+</body>
+</html>

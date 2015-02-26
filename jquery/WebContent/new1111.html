@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Union application.</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<link rel = "stylesheet" href = "super.css">
+<script>
+$(document).ready(function(){
+	$("#hello2").hide();
+	$("#hello3").hide();
+	$("#hello1").show();
+	$("#next1").click(function(){
+
+	    $("#hello1").hide();
+	  });
+	
+		$("#tx").click(function(){
+			  $("#tx").attr("value"," ");
+			}); 
+
+		
+		 $("#tx").focus(function(){
+			 $("#uk").css("display","inline").fadeOut(2000);
+		});
+		 $("#tx").blur(function(){
+			 
+				 $("#tx").attr("value","Hey type your name..."); 
+
+			  });
+	$("#next1").click(function(){
+
+	    $("#hello2").show();
+	  });
+	$("#prev2").click(function(){
+
+	    $("#hello2").hide();
+	  });
+	$("#prev2").click(function(){
+
+	    $("#hello1").show();
+	  });
+	$("#next2").click(function(){
+
+	    $("#hello2").hide();
+	  });
+	$("#next2").click(function(){
+
+	    $("#hello3").show();
+	  });
+	$("#prev3").click(function(){
+
+	    $("#hello3").hide();
+	  });
+	$("#prev3").click(function(){
+
+	    $("#hello2").show();
+	  });
+
+
+  $("#num1").click(function(){
+
+    $("#hello2").hide();
+    $("#hello3").hide();
+  });
+  $("#num1").click(function(){
+	$("#hello1").show();
+	});
+  $("#num2").click(function(){
+
+	    $("#hello1").hide();
+	    $("#hello3").hide();
+	  });
+	  $("#num2").click(function(){
+		$("#hello2").show();
+		});
+	  $("#num3").click(function(){
+
+		    $("#hello1").hide();
+		    $("#hello2").hide();
+		  });
+		  $("#num3").click(function(){
+			$("#hello3").show();
+			});
+
+  
+});
+</script>
+</head>
+<body>
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">Student Union Application online</h1></div>
+<div id="header1">
+Goto page:
+<button id = "num1">1</button>
+===>
+<button id = "num2">2</button>
+===>
+<button id = "num3">3</button>
+</div>
+<right>
+<a href = new2.html style="color:blue;text-align:right"><h1>Logout</h1></a></right>
+<table id = "hello1" style="text-align:center">
+<thead><tr><td><h2><u>General Information   (Please type or print)</u></h2></td></tr></thead>
+<tbody>
+<tr>
+<td>
+Date:
+</td>
+<td>
+Position Applying For:
+</td>
+</tr> 
+<tr>
+<td>
+<input type = "date"/>
+
+</td>
+<td>
+<input type = "text" class="txtbx" >
+</td>
+</tr>
+<tr>
+<td>
+<p id = "name">Name: Last, First, Middle</p>
+</td>
+<td>
+Telephone(Include Area Code)
+</td>
+</tr>
+<tr>
+<td>
+<input type = "text" class="txtbx" />
+</td>
+<td>
+<input type = "text" class="txtbx" id = "tx" value = "Hey type your name..."/>
+</td>
+</tr>
+<tr>
+<td>
+Address: Number, Street, Apartment/Space Number       
+</td>
+<td>
+Cell Phone(Include Area Code)
+</td>
+</tr>
+<tr>
+<td>
+<input type = "text" class="txtbx"/>
+</td>
+<td>
+<input type = "text" class="txtbx"/>
+</td>
+
+</tr>
+
+<tr>
+<td>
+City, State, Zip Code       
+</td>
+<td>
+May we contact you at work?
+</td>
+</tr>
+<tr>
+<td>
+<input type = "text" class="txtbx"/>
+</td>
+<td>
+<input type = "radio" name = "contact">Yes
+<input type = "radio" name = "contact">No
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+</td>
+<td>
+<button id = "next1">Proceed to Next Page</button>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table id = "hello2" style="text-align:center">
+<thead>
+</thead>
+<tbody>
+<tr>
+<td>
+<h2><u>Employment</u></h2>
+</td>
+
+<tr>
+<td>
+Dates of employment
+</td>
+<td>
+Name of Employee or Company     :
+</td>
+<td>
+Telephone Number
+</td>
+</tr>
+<tr>
+<td>
+From:<input type = "date"/>
+</td>
+<td>
+<input type = "text" size = "35"/>
+</td>
+<td>
+<input type = "text"/>
+</td>
+</tr>
+<tr>
+<td>
+To    : <input type = "date" />
+</td>
+<td>
+Address, City, State, Zip Code
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+<input type = "text" size = "35"/>
+</td>
+</tr>
+<tr>
+<td>
+Hours per week
+</td>
+<td>
+Supervisor's Name and Job Title: 
+</td>
+<td>
+Your Job Title
+</td>
+</tr>
+<tr>
+<td>
+<input type = "text"/>
+</td>
+<td>
+<input type = "text" size = "35"/>
+</td>
+<td>
+<input type = "text"/>
+</td>
+</tr>
+<tr>
+<td>
+Last Salary: 
+</td>
+<td>
+Describe your Duties:
+</td>
+</tr>
+<tr>
+<td>
+<input type = "text"/>
+</td>
+<td>
+<input type = "text" size = "35"/>
+</td>
+</tr>
+<tr>
+<td>
+Per: <input type = "text" size = "17"/>
+</td>
+<td>
+Reason for Leaving:
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+<input type = "text" size = "35"/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<button id = "prev2">Edit previous Page</button>
+</td>
+<td></td>
+<td>
+<button id = "next2">Proceed to Next Page</button>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table id = "hello3" style="text-align:center">
+<thead>
+</thead>
+<tbody>
+<tr>
+<td>
+<h2>List all your computer and software experience:</h2>
+</td>
+</tr>
+<tr>
+<td>
+<input type = "text" size = "100">
+</td>
+<tr>
+<td>
+<h2>Additional Qualifications:</h2>
+</td>
+<td>
+Please identify any skill, knowledge or ability related to this position which would assist in the evaluation of your application.
+</td>
+</tr>
+<tr>
+<td>
+<input type = "text" size = "100">
+</td>
+
+<tr>
+<td>
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">Available timings</h1></div>
+
+<div id="menu" style="background-color:#FFD700;height:360px;width:100px;float:left;">
+Time/Day
+0700<br>
+0800<br>
+0900<br>
+1000<br>
+1100<br>
+1200<br>
+1300<br>
+1400<br>
+1500<br>
+1600<br>
+1700<br>
+1800<br>
+1900<br>
+2000<br></div>
+
+<div id="content" style="background-color:#EEEEEE;height:360px;width:400px;float:left;">
+M Tues W Th Fr Sa Su
+<br><span>
+
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<br>
+<input type= "checkbox" size = "10">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+<input type= "checkbox">
+
+</span>
+</div>
+
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<button id = "prev3">Go To Previous Page</button>
+</td><td>
+<button type = "button" onclick = "alert('Your applcation is received. Thank you.')">Go To Next Page</button>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+
+</body>
+</html>

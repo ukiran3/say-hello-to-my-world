@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+body
+{
+	background-color:#500;
+}
+.txtx
+{
+	height:25px;
+	width:200px;
+	background-color:#FFFF00;
+}
+.txtx1
+{
+	height:25px;
+	width:400px;
+	background-color:#FFFF00;
+}
+#loc
+{
+	height:25px;
+	width:400px;
+	background-color:#FFFF00;
+}
+#month
+{
+	height:25px;
+	width:200px;
+	background-color:#FFFF00;
+}
+#gender
+{
+	height:25px;
+	width:400px;
+	background-color:#FFFF00;
+}
+#day 
+{
+	height:25px;
+	width:80px;
+	background-color:#FFFF00;
+}
+#year 
+{
+	height:25px;
+	width:100px;
+	background-color:#FFFF00;
+}
+p
+{
+	font-family:sans-serif;
+	font-style:bold;
+}
+#button
+{
+	height:30px;
+	width:100px;
+	background-color:#FFF00;
+}

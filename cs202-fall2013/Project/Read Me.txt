@@ -1,0 +1,7 @@
+Project Actual Question : http://www.pcwerk.com/~csula/cs202-2013-fall/files/project_v1.pdf 
+
+if you can edit and make the project from the rancher game folder(not working that fine) it would be great as its completely object oriented and we need dat and if not then the edited folder contains little less Object oriented (bt working fine). other are jus if they can help.
+
+we also have to add the GUI part to the program as i cant figure out how to add it whether make a new class called GUI so that calling methods from there wld be easy or put the graphics part between the program.
+
+professor also requires some extra part if possible like add the powerups to sheeep so that it can move diagonally and also add timmer to the program so that even if nohthing is done for long time somthings can change ..!!with GUI.

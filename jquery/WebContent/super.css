@@ -1,0 +1,49 @@
+@CHARSET "ISO-8859-1";
+body
+{
+	width:1000px;
+	height:500px;
+	margin:0 auto;
+	background-color:#FFA;
+}
+
+.txtbx
+{
+	padding:5px 5px 5px 50px;	
+}
+#header1
+{
+	width:300px;
+	height:25px;
+	background-color:#AAA;
+}
+#hello1
+{
+	width:900px;
+	height:500px;
+	margin:5px;
+	border:5px;
+	background-color:#EEE;
+}
+#hello2
+{
+	width:900px;
+	height:500px;
+	margin:5px;
+	border:5px;
+	background-color:#AA5;
+}
+#hello3
+{
+	width:900px;
+	height:500px;
+	margin:5px;
+	border:5px;
+	background-color:#999;
+}
+#name
+{
+	font-family:Times New Roman;
+	font-style: italic;
+	
+}
